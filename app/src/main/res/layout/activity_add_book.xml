@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddBookActivity">
+
+    <!-- Book Title Input -->
+    <EditText
+        android:id="@+id/bookTitleField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Title"
+        android:inputType="text"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Book Author Input -->
+    <EditText
+        android:id="@+id/bookAuthorField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Author"
+        android:inputType="text"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Status Spinner -->
+    <Spinner
+        android:id="@+id/bookStatusSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Rating Input -->
+    <EditText
+        android:id="@+id/bookRatingField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rating (1.0 - 5.0)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveBookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Book" />
+
+</LinearLayout>
